@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Factory_Design_Pattern
 {
-    class Program
+    class Tiger:IAnimal
     {
-        static void Main(string[] args)
+        public string Type()
         {
+            return "Tiger is a Wild Animal";
+        }
+        public string Action()
+        {
+            return "Tiger grunts";
         }
     }
 }
