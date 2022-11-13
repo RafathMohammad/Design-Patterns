@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Visitor_Design_Pattern
 {
-    class Program
+    public interface IVisitor
     {
-        static void Main(string[] args)
-        {
-        }
+        void Visit(Patient patient);
     }
 }
