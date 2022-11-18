@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Visitors\Dentist.cs" />
     <Compile Include="Visitors\Family.cs" />
-    <Compile Include="Hospital.cs" />
     <Compile Include="Visitors\Nurse.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Visitors\Physician.cs" />

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Visitor_Design_Pattern
 {
@@ -13,9 +9,15 @@ namespace Visitor_Design_Pattern
         {
             _name = Name;
         }
-        public void Attend(IVisitor visitor)
+
+        // The Component interface declares an `accept` method that should take the
+        // base visitor interface as an argument.
+
+        public void Accept(IVisitor visitor)  
         {
-            visitor.Visit(this);
+            visitor.Visit(this); //we're calling `Visit', which matches the
+                                 // current class name. This way we let the visitor know the class of the
+                                 // component it works with.
         }
     }
 }
