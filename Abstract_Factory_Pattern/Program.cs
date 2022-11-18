@@ -15,20 +15,16 @@ namespace AbstractFactoryDesignpattern
             switch (role)
             {
                 case 1:
-                    ManagerHandoverSystem(new DellCompany());
-                    HandoverHeadset(new HPCompany());
+                    ManagerHandoverSystem(new DellCompany());  //manager and permanent employee
                     break;
                 case 2:
-                    HandoverSystem(new HPCompany());
-                    HandoverHeadset(new DellCompany());
+                    HandoverSystem(new HPCompany());// Not a manager and permanent employee
                     break;
                 case 3:
-                    ManagerHandoverSystem(new DellCompany());
-                    HandoverHeadset(new HPCompany());
+                    ManagerHandoverSystem(new DellCompany());  //  manager and Contract employee
                     break;
                 case 4:
-                    HandoverSystem(new HPCompany());
-                    HandoverHeadset(new DellCompany());
+                    HandoverSystem(new HPCompany());//  Not a manager and permanent employee
                     break;
                 default:
                     Console.WriteLine("Please enter your role Correctly");
@@ -42,15 +38,16 @@ namespace AbstractFactoryDesignpattern
             
             var laptop=asset.GetLaptop();
             Console.WriteLine(laptop.Handover());
-            
+
+            var headset = asset.GetHeadset();
+            Console.WriteLine(headset.Handover());
+
         }
         public void HandoverSystem(ICompanyAsset asset)
         {
             var desktop = asset.GetDesktop();
             Console.WriteLine(desktop.Handover());
-        }
-        public void HandoverHeadset(ICompanyAsset asset)
-        {
+
             var headset = asset.GetHeadset();
             Console.WriteLine(headset.Handover());
         }
