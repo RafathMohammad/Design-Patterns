@@ -15,9 +15,7 @@ namespace Visitor_Design_Pattern
 
         public void Accept(IVisitor visitor)  
         {
-            visitor.Visit(this); //we're calling `Visit', which matches the
-                                 // current class name. This way we let the visitor know the class of the
-                                 // component it works with.
+            visitor.Visit(this); 
         }
     }
 }
