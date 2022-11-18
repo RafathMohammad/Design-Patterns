@@ -12,9 +12,9 @@ namespace Factory_Design_Pattern
         {
             switch (animalType)
             {
-                case "Wild":
+                case "Tiger":
                     return new Tiger();
-                case "Domestic":
+                case "Dog":
                     return new Dog();
                 default:
                     return null;

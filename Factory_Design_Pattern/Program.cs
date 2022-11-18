@@ -10,9 +10,9 @@ namespace Factory_Design_Pattern
     {
         static void Main(string[] args)
         {
-            IAnimal wild = new AnimalFactory().CreateAnimal("Wild");
-            IAnimal domestic = new AnimalFactory().CreateAnimal("Domestic");
-            Console.WriteLine("{0}\n{1}\n{2}\n{3}\n", wild.Type(), wild.Action(), domestic.Type(), domestic.Action());
+            Console.WriteLine("Please enter the animal");
+            IAnimal animal = new AnimalFactory().CreateAnimal(Console.ReadLine());
+            Console.WriteLine("{0}\n{1}\n", animal.Type(), animal.Action());
             Console.ReadLine();
         }
     }
