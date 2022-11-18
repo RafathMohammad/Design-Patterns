@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AbstractFactoryDesignpattern.Products
+﻿namespace AbstractFactoryDesignpattern.Products
 {
-        class DellDesktop : IDesktop
+    class DellDesktop : IDesktop
         {
             public string Handover()
             {

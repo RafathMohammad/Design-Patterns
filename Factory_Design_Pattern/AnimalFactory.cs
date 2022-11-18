@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Factory_Design_Pattern
+﻿namespace Factory_Design_Pattern
 {
-    class AnimalFactory : IFactory
+    class AnimalFactory : IAnimalFactory
     {
         public IAnimal CreateAnimal(string animalType)
         {

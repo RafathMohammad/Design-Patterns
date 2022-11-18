@@ -1,10 +1,6 @@
 ﻿using AbstractFactoryDesignpattern.Factories;
 using AbstractFactoryDesignpattern.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbstractFactoryDesignpattern
 {
@@ -33,7 +29,7 @@ namespace AbstractFactoryDesignpattern
             }
                
         }
-        public void ManagerHandoverSystem(ICompanyAsset asset)
+        public void ManagerHandoverSystem(IAbstractFactory asset)
         {
             
             var laptop=asset.GetLaptop();
@@ -43,7 +39,7 @@ namespace AbstractFactoryDesignpattern
             Console.WriteLine(headset.Handover());
 
         }
-        public void HandoverSystem(ICompanyAsset asset)
+        public void HandoverSystem(IAbstractFactory asset)
         {
             var desktop = asset.GetDesktop();
             Console.WriteLine(desktop.Handover());

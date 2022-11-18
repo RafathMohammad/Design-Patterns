@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Factories\DellCompany.cs" />
     <Compile Include="Factories\HPCompany.cs" />
-    <Compile Include="Interfaces\ICompanyAsset.cs" />
+    <Compile Include="Interfaces\IAbstractFactory.cs" />
     <Compile Include="Interfaces\ILaptop.cs" />
     <Compile Include="Interfaces\IDesktop.cs" />
     <Compile Include="Interfaces\IHeadset.cs" />
