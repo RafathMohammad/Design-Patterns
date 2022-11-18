@@ -1,10 +1,5 @@
-﻿using ObserverDesignPattern.Interfaces;
-using ObserverDesignPattern.Observers;
+﻿using ObserverDesignPattern.Observers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ObserverDesignPattern
 {
@@ -18,14 +13,14 @@ namespace ObserverDesignPattern
             NewsAgencyA newsAgencyA = new NewsAgencyA();
             NewsAgencyB newsAgencyB = new NewsAgencyB();
 
-            weatherStation.Add(mobileA);
+            weatherStation.Add(mobileA); // adding observer
             weatherStation.Add(mobileB);
             weatherStation.Add(newsAgencyA);
-            weatherStation.Remove(mobileA);
+            weatherStation.Remove(mobileA);  // removing observer
             weatherStation.Add(newsAgencyB);
 
             Random random = new Random();
-            weatherStation.Temperature = random.Next(20, 30);
+            weatherStation.Temperature = random.Next(20, 30); // temperature readings
             weatherStation.Temperature = random.Next(20, 30);
             weatherStation.Temperature = random.Next(20, 30);
             weatherStation.Temperature = random.Next(20, 30);
